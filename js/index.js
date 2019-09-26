@@ -54,6 +54,7 @@ function displayCommits() {
         ' - ' + 
         c.commit.message + '</li>'
       )}</ul>`;
+    document.getElementById('details').innerHTML = commitsList;
 }
 
 function displayBranches() {
