@@ -42,7 +42,18 @@ function displayRepositories() {
 }
 
 function displayCommits() {
-
+  let commits = JSON.parse(this.responseText);
+  console.log(commits);
+  const commitsList = `<ul>${commits
+    .map(
+      c =>
+        '<li>' + 
+        r.name + 
+        ' - <a href="#" data-repo="' + 
+        r.name + 
+        '" onclick="getBranches(this)">Get Commits</a></li>'
+      )
+      .join('')}</ul>`;
 }
 
 function displayBranches() {
