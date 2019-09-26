@@ -65,5 +65,12 @@ function displayCommits() {
 function displayBranches() {
   let branches = JSON.parse(this.responseText);
   console.log(branches);
-  const branchesList = 
+  const branchesList = `<ul>${branches.map(
+    branch => 
+    '<li><strong>' + 
+    branch.name + 
+    '</strong></li>'
+    )
+    .join('')}</ul>`;
+    document.getElementById('details').innerHTML = branchesList;
 }
