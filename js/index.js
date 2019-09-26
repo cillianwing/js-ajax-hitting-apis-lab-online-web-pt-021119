@@ -50,8 +50,7 @@ function displayCommits() {
         '<li>' + 
         c.name + 
         ' - <a href="#" data-repo="' + 
-        c.name + 
-        '" onclick="getBranches(this)">Get Commits</a></li>'
+        c.name
       )
       .join('')}</ul>`;
 }
