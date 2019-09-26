@@ -42,9 +42,9 @@ function displayRepositories() {
 }
 
 function displayCommits() {
-  let details = JSON.parse(this.responseText);
-  console.log(details);
-  const commitsList = `<ul>${details
+  let commits = JSON.parse(this.responseText);
+  console.log(commits);
+  const commitsList = `<ul>${commits
     .map(
       c =>
         '<li>' + 
