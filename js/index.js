@@ -12,7 +12,7 @@ function getCommits(el) {
   const username = document.querySelector('input#username').value
   const req = new XMLHttpRequest();
   req.addEventListener('load', displayCommits);
-  req.open('GET', 'https://api.github.com/repos/octocat/' + name + '/commits');
+  req.open('GET', 'https://api.github.com/repos/' + username + '/' + name + '/commits');
   req.send();
 }
 
