@@ -63,5 +63,7 @@ function displayCommits() {
 }
 
 function displayBranches() {
-
+  let branches = JSON.parse(this.responseText);
+  console.log(branches);
+  const branchesList = 
 }
