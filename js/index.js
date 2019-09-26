@@ -52,7 +52,7 @@ function displayCommits() {
         ' - ' + 
         c.commit.author.name + 
         ' - ' + 
-        c.commit.message '</li>'
+        c.commit.message + '</li>'
       )}</ul>`;
 }
 
