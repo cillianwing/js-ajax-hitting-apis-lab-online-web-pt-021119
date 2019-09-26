@@ -46,14 +46,14 @@ function displayCommits() {
   console.log(commits);
   const commitsList = `<ul>${commits
     .map(
-      c =>
-        '<li>' + 
-        c.author.login + 
-        ' - ' + 
-        c.commit.author.name + 
-        ' - ' + 
-        c.commit.message + '</li>'
-      )}</ul>`;
+      commit =>
+        '<li><strong>' +
+        commit.author.login +
+        '</strong> - ' +
+        commit.commit.message +
+        '</li>'
+    )
+    .join('')}</ul>`;
     document.getElementById('details').innerHTML = commitsList;
 }
 
