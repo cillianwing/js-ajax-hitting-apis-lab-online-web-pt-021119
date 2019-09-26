@@ -48,9 +48,12 @@ function displayCommits() {
     .map(
       c =>
         '<li>' + 
-        c.name + '</li>'
-      )
-      .join('')}</ul>`;
+        c.author.login + 
+        ' - ' + 
+        c.commit.author.name + 
+        ' - ' + 
+        c.commit.message '</li>'
+      )}</ul>`;
 }
 
 function displayBranches() {
