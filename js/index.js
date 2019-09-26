@@ -32,12 +32,10 @@ function displayRepositories() {
     .map(
       r =>
         '<li>' +
-        r.name +
+        r.name + ' - ' + r.html_url + ' - ' + r.owner.login + 
         ' - <a href="#" data-repo="' +
-        r.html_url +
         '" onclick="getCommits(this)">Get Commits</a>' + 
         ' - <a href="#" data-repo="' +
-        r.owner.login +
         '" onclick="getBranches(this)">Get Branches</a></li>'
     )
     .join('')}</ul>`;
