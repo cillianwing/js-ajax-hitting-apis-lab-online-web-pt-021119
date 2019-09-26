@@ -8,7 +8,7 @@ function getRepositories() {
 }
 
 function getCommits(el) {
-  const name = el['dataset'].repo;
+  const name = el.dataset.repo;
   const username = document.querySelector('input#username').value
   const req = new XMLHttpRequest();
   req.addEventListener('load', displayCommits);
