@@ -48,9 +48,9 @@ function displayCommits() {
     .map(
       c =>
         '<li>' + 
-        r.name + 
+        c.name + 
         ' - <a href="#" data-repo="' + 
-        r.name + 
+        c.name + 
         '" onclick="getBranches(this)">Get Commits</a></li>'
       )
       .join('')}</ul>`;
