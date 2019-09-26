@@ -48,7 +48,7 @@ function displayCommits() {
     .map(
       c =>
         '<li>' + 
-        c.name + 
+        c.name + '</li>'
       )
       .join('')}</ul>`;
 }
