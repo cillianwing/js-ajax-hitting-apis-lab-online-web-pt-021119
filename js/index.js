@@ -34,7 +34,7 @@ function displayRepositories() {
         '<li>' +
         r.name +
         ' - <a href="#" data-repo="' +
-        r.htmlURl +
+        r.html_url +
         '" onclick="getCommits(this)">Get Commits</a>' + 
         ' - <a href="#" data-repo="' +
         r.name +
