@@ -49,8 +49,6 @@ function displayCommits() {
       c =>
         '<li>' + 
         c.name + 
-        ' - <a href="#" data-repo="' + 
-        c.name
       )
       .join('')}</ul>`;
 }
