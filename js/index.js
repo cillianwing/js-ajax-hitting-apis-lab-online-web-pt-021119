@@ -37,7 +37,7 @@ function displayRepositories() {
         r.html_url +
         '" onclick="getCommits(this)">Get Commits</a>' + 
         ' - <a href="#" data-repo="' +
-        r.name +
+        r.owner.login +
         '" onclick="getBranches(this)">Get Branches</a></li>'
     )
     .join('')}</ul>`;
